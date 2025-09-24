@@ -38,7 +38,7 @@ section {
     height: 34.375rem; 
     background-color: #1F2937;
     padding-left: 52px;
-    padding-right: 10px;
+    padding-right: 52px;
     border-radius: 10px;
     overflow: auto;
 }
@@ -72,24 +72,30 @@ p {
     font-weight: 300;
 }
 
-button {
+.generateButton {
+    margin-top: 51px;
+    max-width: 11.938rem;
+}
+
+.generateButton,
+.resetButton {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    padding: 9px 17px 9px 15px;
     border-radius: 6px;
     background-color: var(--green);
     color: var(--white);
-    padding: 9px 17px 9px 15px;
-    border: none;
-    line-height: 24px;
-    font-weight: 500;
-    max-width: 11.938rem;
-    gap: 12px;
-    margin-top: 51px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: var(--interFont);
+    
 }
 
-button:hover{
+.generateButton:hover,
+.resetButton:hover{
     opacity: 90%;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    box-shadow: 0 0 5px black;
 }
 
 
@@ -103,20 +109,34 @@ hr {
 .resultContainer {
     display: flex;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .passwordResult1,
 .passwordResult2 {
     background-color: #273549;
-    height: 2.438rem;
-    width: 13.188rem;
+    line-height: 2.438rem;
+    width: 100%;
+   max-width: 13.188rem;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--brightGreen);
     font-family: var(--interFont);
+
 }
+
+.resetButton {
+    text-transform: capitalize;
+    text-align: center;
+    max-width: 18.75rem;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+
 
 @media screen and (max-width:500px){
 
@@ -136,13 +156,13 @@ hr {
     h2 {
         margin: 0 auto;
         text-align: center;
+        
     }
 
     span {
         white-space: wrap;
     }
     p {
-
         text-align: center;
         margin: 15px auto 0;
     }
@@ -151,6 +171,12 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
    }
+.passwordResult1,
+.passwordResult2 {
+    width: 100%;
+   max-width: 17rem;
 
+}
 } 
