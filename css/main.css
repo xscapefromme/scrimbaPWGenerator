@@ -115,7 +115,7 @@ hr {
 .passwordResult1,
 .passwordResult2 {
     background-color: #273549;
-    line-height: 2.438rem;
+    height: 2.4rem;
     width: 100%;
    max-width: 13.188rem;
     border-radius: 6px;
@@ -124,7 +124,6 @@ hr {
     align-items: center;
     color: var(--brightGreen);
     font-family: var(--interFont);
-
 }
 
 .resetButton {
@@ -173,10 +172,9 @@ hr {
     gap: 3rem;
     align-items: center;
    }
-.passwordResult1,
+ .passwordResult1,
 .passwordResult2 {
     width: 100%;
    max-width: 17rem;
-
-}
+} 
 } 
