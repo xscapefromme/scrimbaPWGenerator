@@ -9,7 +9,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordResult1 = document.querySelector(".passwordResult1")
 let passwordResult2 = document.querySelector(".passwordResult2")
-
+let copyPassword = document.querySelector(".copyPassword")
 
 
 
@@ -38,4 +38,24 @@ function generatePasswords() {
      passwordResult2.textContent = password2;
 }
 
+function copyPW1(){
+    let passwordCopy = passwordResult1.textContent 
+    navigator.clipboard.writeText(passwordCopy)
+    console.log("Clicked!")
+}
+function copyPW2(){
+    let passwordCopy = passwordResult2.textContent
+    navigator.clipboard.writeText(passwordCopy)
+    console.log("Yes its being clicked come back when you have more information on how to set the copy clipboard more properly")
+}
+
+
+function resetButton(){
+
+    let passwordReset = ""
+
+    passwordResult1.textContent = passwordReset;
+    passwordResult2.textContent = passwordReset;
+
+}
 

@@ -16,12 +16,13 @@
             <button type="button" onclick="generatePasswords()" class="generateButton">Generate passwords</button>
             <hr>
             <div class="resultContainer">
-            <div class="passwordResult1"></div>
-            <div class="passwordResult2"></div>
-            
+
+            <div class="passwordResult1" onclick="copyPW1()"></div>
+            <div class="passwordResult2" onclick="copyPW2()"></div>
             </div>
+            <p class="copyPassword"></p>
             <div>
-             <button type="button" class="resetButton" onclick="resetButton">reset</button>
+             <button type="button" class="resetButton" onclick="resetButton()">reset</button>
             </div>
         </section>
        
