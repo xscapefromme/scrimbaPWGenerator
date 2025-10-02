@@ -10,10 +10,11 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let passwordResult1 = document.querySelector(".passwordResult1")
 let passwordResult2 = document.querySelector(".passwordResult2")
 let copyPassword = document.querySelector(".copyPassword")
+let generateBtn = document.querySelector(".generateButton")
 
 
 
-function generatePasswords() {
+generateBtn.addEventListener('click',function generatePasswords() {
     let password1 = "";
     let password2 = "";
 
@@ -36,7 +37,7 @@ function generatePasswords() {
     }
      passwordResult1.textContent = password1;
      passwordResult2.textContent = password2;
-}
+})
 
 function copyPW1(){
     let passwordCopy = passwordResult1.textContent 

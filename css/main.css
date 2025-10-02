@@ -33,7 +33,7 @@ main {
     flex-wrap: wrap;
 }
 
-section {
+article {
     width: 34.375rem;
     height: 34.375rem; 
     background-color: #1F2937;
@@ -139,7 +139,7 @@ hr {
 
 @media screen and (max-width:500px){
 
-    section {
+    article {
         display: flex;
         flex-direction: column;
         align-items: center;
